@@ -73,7 +73,7 @@ export default function Home() {
               src={portraitImage}
               alt=""
               sizes="(min-width: 1024px) 24rem, 16rem"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover bg-bottom dark:bg-zinc-800"
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover bg-bottom dark:bg-zinc-800 shadow-xl"
             />
           </div>
         </motion.div>
