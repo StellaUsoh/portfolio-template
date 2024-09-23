@@ -17,7 +17,7 @@ export function Header() {
             <div className="">
               <div className="flex justify-between items-center">
               <div className="pointer-events-auto">
-                <a href="https://www.buildingbloques.com" className="hover:text-gray-400 font-semibold text-gray-900 dark:text-gray-100">
+                <a href="https://www.buildingbloques.com" target='_blank' className="hover:text-gray-400 font-semibold text-gray-900 dark:text-gray-100">
                   Buy template
                 </a>
                 </div>
