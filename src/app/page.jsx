@@ -42,57 +42,28 @@ export default function Home() {
               </p>
               <div className="space-y-4 text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
                 <p>Hi, I am Stella.</p>
-                <p>
-                  I help teams turn problems into products people actually use.
-                  I do this as a product manager.
-                </p>
-                <p>
-                  For about 4 years, I have worked with startups, founders, and
-                  organizations across SaaS, Edtech, Ecommerce, and Proptech;
-                  shipping products and getting things built.
-                </p>
+                <p>I help teams turn problems into products people actually use. I do this as a product manager.</p>
+                <p>For about 4 years, I have worked with startups, founders, and organizations across SaaS, Edtech, Ecommerce, and Proptech; shipping products and getting things built.</p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3 text-sm">
-                
-                  href="mailto:stellausohh@gmail.com"
-                  className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                >
+                <a href="mailto:stellausohh@gmail.com" className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">
                   Email
                 </a>
                 <span className="text-zinc-300 dark:text-zinc-700">·</span>
-                
-                  href="https://linkedin.com/in/stellausoh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                >
+                <a href="https://linkedin.com/in/stellausoh" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">
                   LinkedIn
                 </a>
                 <span className="text-zinc-300 dark:text-zinc-700">·</span>
-                
-                  href="https://x.com/ARealLifeStar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                >
+                <a href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">
                   X
                 </a>
                 <span className="text-zinc-300 dark:text-zinc-700">·</span>
-                
-                  href="https://cal.com/stella-usoh/45-min-discovery-meeting"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-900 dark:text-zinc-100 font-medium hover:text-zinc-500 transition-colors"
-                >
+                <a href="https://cal.com/stella-usoh/45-min-discovery-meeting" target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-zinc-100 font-medium hover:text-zinc-500 transition-colors">
                   Book a call
                 </a>
               </div>
             </div>
-            <motion.div
-              variants={fadeUp}
-              custom={1}
-              className="sm:w-32 sm:flex-shrink-0"
-            >
+            <motion.div variants={fadeUp} custom={1} className="sm:w-32 sm:flex-shrink-0">
               <Image
                 src={portraitImage}
                 alt="Stella Usoh"
@@ -137,12 +108,7 @@ export default function Home() {
             <a href="https://github.com/StellaUsoh" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">GitHub</a>
           </div>
           <div className="flex justify-between items-center">
-            
-              href="https://cal.com/stella-usoh/45-min-discovery-meeting"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
-            >
+            <a href="https://cal.com/stella-usoh/45-min-discovery-meeting" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">
               If you are building something that needs to ship, lets talk
             </a>
             <span>Stella Usoh · PM</span>
