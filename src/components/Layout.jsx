@@ -1,17 +1,32 @@
-import { Header } from "./Header";
+import { Layout } from "../components/Layout";
+import { Providers } from "./providers";
+import '../../styles/tailwind.css'
 
-export function Layout({ children }) {
+export const metadata = {
+  title: {
+    template: '%s - Stella Usoh',
+    default: 'Stella Usoh - Product Manager',
+  },
+  description: 'Product Manager with a background in project management. I build products that solve real problems for real people.',
+}
+
+export default function RootLayout({ children }) {
   return (
-    <>
-      <div className="fixed inset-0 flex justify-center sm:px-8">
-        <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
-        </div>
-      </div>
-      <div className="relative flex w-full flex-col">
-        <Header />
-        <main className="flex-auto">{children}</main>
-      </div>
-    </>
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <head>
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='black'/><text x='50' y='54' font-family='Arial, Helvetica, sans-serif' font-size='42' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='middle'>SU</text></svg>"
+        />
+      </head>
+      <body className="flex h-full bg-zinc-50 dark:bg-black">
+        <Providers>
+          <div className="flex w-full">
+            <Layout>{children}</Layout>
+          </div>
+        </Providers>
+      </body>
+    </html>
   )
 }
