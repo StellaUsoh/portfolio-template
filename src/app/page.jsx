@@ -18,7 +18,7 @@ const fadeUp = {
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
-  { label: "Random stuff about me", href: "/random" },
+  { label: "Random stuff", href: "/random" },
 ];
 
 export default function Home() {
