@@ -1,137 +1,348 @@
-"use client"; 
+"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import clsx from "clsx";
-
-import { GitHubIcon, LinkedInIcon, XIcon } from "../components/SocialIcons";
 import portraitImage from "../images/portrait.jpeg";
 import { Container } from "../components/Container";
 
-function SocialLink({ className, href, children, icon: Icon }) {
-  return (
-    <li className={clsx(className, "flex")}>
-      <Link
-        href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500 items-center"
-      >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
-        <span className="ml-4">{children}</span>
-      </Link>
-    </li>
-  );
-}
-
-function MailIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-      />
-    </svg>
-  );
-}
-
-const containerVariants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-};
-
-const imageVariants = {
-  hidden: { opacity: 0, x: -50 },
-  visible: {
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: (i = 0) => ({
     opacity: 1,
-    x: 0,
-    transition: { duration: 1.2, ease: "easeInOut" },
-  },
+    y: 0,
+    transition: { duration: 0.6, delay: i * 0.1, ease: "easeOut" },
+  }),
 };
 
-const textVariants = {
-  hidden: { opacity: 0, x: 50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1.2, ease: "easeInOut" },
+const experiences = [
+  {
+    company: "Building Bloques",
+    role: "Product Manager",
+    period: "Jun 2026 – Present",
   },
-};
+  {
+    company: "EchoBitsTech",
+    role: "Product Manager",
+    period: "Sept 2025 – Apr 2026",
+  },
+  {
+    company: "InnovatePath Consulting Limited",
+    role: "Project Coordinator",
+    period: "Feb 2025 – Jun 2025",
+  },
+];
+
+const projects = [
+  {
+    name: "PlanetCred",
+    tag: "Climate Tech · 2026",
+    description:
+      "A mobile-first climate action platform for teens and young adults. Built around participation, evidence, rewards, and community.",
+    impact: "60+ early users · Live on web and mobile",
+    url: "https://planetcred.com",
+  },
+  {
+    name: "Estate360",
+    tag: "Proptech · 2025",
+    description:
+      "A smart estate management app connecting residents, security teams, and administrators in one place.",
+    impact: "Adopted across 5 estates at launch",
+    url: "#",
+  },
+  {
+    name: "Court Management System",
+    tag: "LegalTech · 2025",
+    description:
+      "A web app enabling court service requests — affidavits, court orders, and document verification — for users and agents across Nigerian courts.",
+    impact: "Shipped in 4 weeks",
+    url: "#",
+  },
+  {
+    name: "MyJournal",
+    tag: "AI · In progress",
+    description:
+      "An AI-powered journaling and note-taking web app I'm building solo. Exploring what it means to build a personal product from the inside out.",
+    impact: "Currently building",
+    url: "#",
+  },
+];
 
 export default function Home() {
   return (
-    <Container className="mt-12 sm:mt-24">
-      <motion.div
-        className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12"
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-      >
-        {/* Left side - Image */}
-        <motion.div className="lg:pl-20" variants={imageVariants}>
-          <div className="max-w-xs px-2.5 lg:max-w-none">
-            <Image
-              src={portraitImage}
-              alt=""
-              sizes="(min-width: 1024px) 24rem, 16rem"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover bg-bottom dark:bg-zinc-800 shadow-xl"
-            />
-          </div>
-        </motion.div>
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200">
+      <Container className="py-16 sm:py-24 max-w-2xl">
 
-        {/* Right side - Text */}
-        <motion.div
-          className="lg:order-first lg:row-span-2"
-          variants={textVariants}
+        {/* HERO */}
+        <motion.section
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
+          className="mb-20"
         >
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Angelina Jolie
-          </h1>
-          <p className="mt-2 text-xl font-semibold text-zinc-600 dark:text-zinc-400">
-            Frontend developer from Mallorca, Spain.
-          </p>
-          <div className="mt-4 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>
-              I have a passion for building beautiful, snappy, and performant
-              web applications. I have worked at big tech companies and small
-              and medium startups. Even though I focus on the frontend, I am
-              comfortable with all parts of the stack, from designing UIs,
-              publishing npm packages, building backend APIs and databases.
-            </p>
-            <p>
-              Currently, I am working at Supabase, an open source postgres
-              development platform with authentication, realtime, storage, logs
-              and analytics, and more! I focus on observability and helping
-              developers build better applications.
-            </p>
-            <p>
-              Outside of work, I am a big fan of taking photos 📷 barbecuing 🍖
-              playing music 🎸 traveling 🧳 hiking 🥾 and learning new things 📚
-            </p>
+          <div className="flex flex-col-reverse sm:flex-row sm:items-start sm:justify-between gap-8">
+            <div className="flex-1">
+              <h1 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-1">
+                Stella Usoh
+              </h1>
+              <p className="text-zinc-500 dark:text-zinc-400 mb-6">
+                Product Manager · Open to opportunities
+              </p>
+              <div className="space-y-4 text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
+                <p>
+                  I'm a Product Manager with a strong background in project
+                  management. That means I understand what it takes to build a
+                  product and how to drive delivery and monitor progress.
+                </p>
+                <p>
+                  I particularly enjoy the discovery aspect of product
+                  development, asking questions, understanding the why and the
+                  who, and uncovering the value we're trying to create.
+                </p>
+                <p>
+                  I'm driven by the conviction that a product is only as good
+                  as the problem it solves for the person using it. The best
+                  technology in the world wouldn't mean much if it wasn't
+                  created to make someone's life easier, better, or simpler.
+                </p>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3 text-sm">
+                
+                  href="mailto:stellausohh@gmail.com"
+                  className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+                >
+                  Email
+                </a>
+                <span className="text-zinc-300 dark:text-zinc-700">·</span>
+                
+                  href="https://linkedin.com/in/stellausoh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+                >
+                  LinkedIn
+                </a>
+                <span className="text-zinc-300 dark:text-zinc-700">·</span>
+                
+                  href="https://x.com/ARealLifeStar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+                >
+                  X
+                </a>
+                <span className="text-zinc-300 dark:text-zinc-700">·</span>
+                
+                  href="https://cal.com/stella-usoh/45-min-discovery-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-900 dark:text-zinc-100 font-medium hover:text-zinc-500 dark:hover:text-zinc-400 transition-colors"
+                >
+                  Book a call →
+                </a>
+              </div>
+            </div>
+            <motion.div variants={fadeUp} custom={1} className="sm:w-32 sm:flex-shrink-0">
+              <Image
+                src={portraitImage}
+                alt="Stella Usoh"
+                width={128}
+                height={128}
+                className="rounded-2xl object-cover object-top shadow-md w-24 h-24 sm:w-32 sm:h-32"
+              />
+            </motion.div>
           </div>
-          <div className=" mb-8">
-            <SocialLink
-              href="mailto:angelinajolie@buildingbloques.com"
-              icon={MailIcon}
-              className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-            >
-              angelinajolie@buildingbloques.com
-            </SocialLink>
-            <ul role="list" className="flex items-center gap-4 mt-4">
-              <SocialLink href="#" icon={XIcon}>
-                X
-              </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon}>
-                GitHub
-              </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon}>
-                LinkedIn
-              </SocialLink>
-            </ul>
-          </div>
-        </motion.div>
+        </motion.section>
 
-        {/* Social Links */}
-      </motion.div>
-    </Container>
+        <hr className="border-dashed border-zinc-200 dark:border-zinc-800 mb-20" />
+
+        {/* NOW */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className="mb-20"
+        >
+          <p className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-6">
+            Now
+          </p>
+          <div className="space-y-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p>Building <strong className="text-zinc-800 dark:text-zinc-200">MyJournal</strong> — an AI-powered journaling and note-taking app. My first solo product, built from the inside out.</p>
+            <p>Job hunting for a mid-level PM role at a company with strong product culture — somewhere I can work alongside senior PMs who take discovery seriously.</p>
+            <p>Learning product analytics and SQL. Taking it seriously this time, not just reading about it.</p>
+            <p>Writing about what I'm building and learning. Slowly getting comfortable putting my thoughts out in public. <a href="/notes" className="text-zinc-800 dark:text-zinc-200 underline underline-offset-2">Read my notes →</a></p>
+          </div>
+        </motion.section>
+
+        <hr className="border-dashed border-zinc-200 dark:border-zinc-800 mb-20" />
+
+        {/* WORK */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className="mb-20"
+        >
+          <p className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-6">
+            Work
+          </p>
+          <div className="space-y-4">
+            {experiences.map((exp, i) => (
+              <motion.div
+                key={i}
+                custom={i}
+                variants={fadeUp}
+                className="flex items-start justify-between gap-4"
+              >
+                <div>
+                  <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                    {exp.company}
+                  </p>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-500">
+                    {exp.role}
+                  </p>
+                </div>
+                <p className="text-xs text-zinc-400 dark:text-zinc-600 whitespace-nowrap pt-0.5">
+                  {exp.period}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        <hr className="border-dashed border-zinc-200 dark:border-zinc-800 mb-20" />
+
+        {/* PROJECTS */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className="mb-20"
+        >
+          <p className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-6">
+            Projects
+          </p>
+          <div className="space-y-10">
+            {projects.map((project, i) => (
+              <motion.div key={i} custom={i * 0.5} variants={fadeUp}>
+                <div className="flex items-start justify-between gap-4 mb-1">
+                  <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                    {project.name}
+                  </p>
+                  <p className="text-xs text-zinc-400 dark:text-zinc-600 whitespace-nowrap pt-0.5">
+                    {project.tag}
+                  </p>
+                </div>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-2">
+                  {project.description}
+                </p>
+                <p className="text-xs text-zinc-400 dark:text-zinc-600">
+                  {project.impact}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        <hr className="border-dashed border-zinc-200 dark:border-zinc-800 mb-20" />
+
+        {/* OUTSIDE WORK */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className="mb-20"
+        >
+          <p className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-6">
+            Outside of work
+          </p>
+          <div className="space-y-6 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <div>
+              <p className="font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                Avid reader
+              </p>
+              <p>
+                You'll always find me deep in a book, particularly African
+                fiction. I promote African literature on my social platforms and
+                write content to encourage reading culture among young Africans.
+              </p>
+              <div className="mt-3">
+                
+                  href="https://www.goodreads.com/user/show/188990551-whatstellaread"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-zinc-400 dark:text-zinc-600 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
+                >
+                  Currently reading: Season of Crimson Blossoms — Abubakar Adam Ibrahim · See all on Goodreads →
+                </a>
+              </div>
+            </div>
+            <div>
+              <p className="font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                Writing and journaling
+              </p>
+              <p>
+                I yap about books sometimes. Actually, all the time. I also
+                love to scribble a lot and consider journaling an act of
+                self-care. It's also why I'm building MyJournal.
+              </p>
+            </div>
+            <div>
+              <p className="font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                True crime and audiobooks
+              </p>
+              <p>
+                You'll also find me hooked on a true crime documentary or deep
+                into an audiobook between tasks.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
+        <hr className="border-dashed border-zinc-200 dark:border-zinc-800 mb-20" />
+
+        {/* SOMEDAY */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className="mb-20"
+        >
+          <p className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-6">
+            Someday
+          </p>
+          <div className="space-y-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p>Be the PM people call when there's a hard problem to solve.</p>
+            <p>Build a product that genuinely makes someone's life easier and have the numbers to prove it.</p>
+            <p>Write things that make other people feel less alone in figuring out what they're doing.</p>
+            <p>Close the gap between the work I do and the story I can tell about it.</p>
+          </div>
+        </motion.section>
+
+        {/* FOOTER */}
+        <motion.footer
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className="text-xs text-zinc-400 dark:text-zinc-600 flex justify-between items-center pt-8 border-t border-dashed border-zinc-200 dark:border-zinc-800"
+        >
+          
+            href="https://cal.com/stella-usoh/45-min-discovery-meeting"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
+          >
+            If you're building something that needs to ship, let's talk →
+          </a>
+          <span>Stella Usoh · PM</span>
+        </motion.footer>
+
+      </Container>
+    </div>
   );
 }
