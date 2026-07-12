@@ -7,7 +7,7 @@ export const metadata = {
     template: '%s - Stella Usoh',
     default: 'Stella Usoh - Product Manager',
   },
-  description: 'Product Manager with a background in project management. I build products that solve real problems for real people.',
+  description: 'Product Manager with a background in project management. Building products that solve real problems for real people.',
 }
 
 export default function RootLayout({ children }) {
