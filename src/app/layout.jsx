@@ -1,6 +1,6 @@
 import { Layout } from "../components/Layout";
 import { Providers } from "./providers";
-import '../styles/tailwind.css'
+import '../../styles/tailwind.css'
 
 export const metadata = {
   title: {
