@@ -127,7 +127,7 @@ export default function About() {
 
         <footer className="text-xs text-zinc-400 dark:text-zinc-600 space-y-4 pt-8 border-t border-dashed border-zinc-200 dark:border-zinc-800">
           <div className="flex flex-wrap gap-3">
-            <a href="https://whatstellaread.medium.com/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">Medium</a>
+            <a href="https://stellausoh.medium.com/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">Medium</a>
             <span>·</span>
             <a href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">X (Twitter)</a>
             <span>·</span>
