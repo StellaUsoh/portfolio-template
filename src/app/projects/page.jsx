@@ -104,7 +104,7 @@ export default function Projects() {
         variants={fadeUp}
         className="max-w-5xl"
       >
-        <Link href="/" className="text-sm text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors mb-8 block">
+        <Link href="/" className="text-sm text-zinc-500 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors mb-8 block">
           ← Home
         </Link>
 
@@ -139,7 +139,7 @@ export default function Projects() {
                   <p className="text-xs text-zinc-500 mb-1">{project.tag}</p>
                   <h2 className="text-base font-semibold text-zinc-100 mb-2">{project.name}</h2>
                   <p className="text-sm text-zinc-400 leading-relaxed mb-4">{project.description}</p>
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-300 underline underline-offset-4 hover:decoration-[#88051E] transition-all">
+                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-300 underline underline-offset-4 hover:decoration-[#88051E] dark:hover:decoration-[#FEF8C4] dark:hover:decoration-[#FEF8C4] dark:hover:decoration-[#FEF8C4]] dark:hover:decoration-[#FEF8C4] dark:hover:decoration-[#FEF8C4] transition-all">
                     {project.label} →
                   </a>
                 </div>
@@ -194,11 +194,11 @@ export default function Projects() {
 
         <div className="border-t border-zinc-100 dark:border-zinc-700/40 pt-8 pb-16">
           <ul role="list" className="flex flex-wrap items-center gap-6">
-            <li><a href="https://stellausoh.medium.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">Medium</a></li>
-            <li><a href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">X (Twitter)</a></li>
-            <li><a href="mailto:stellausohh@gmail.com" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/stellausoh/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">LinkedIn</a></li>
-            <li><a href="https://github.com/StellaUsoh" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">GitHub</a></li>
+            <li><a href="https://stellausoh.medium.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">Medium</a></li>
+            <li><a href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">X (Twitter)</a></li>
+            <li><a href="mailto:stellausohh@gmail.com" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/stellausoh/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">LinkedIn</a></li>
+            <li><a href="https://github.com/StellaUsoh" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">GitHub</a></li>
           </ul>
         </div>
 
