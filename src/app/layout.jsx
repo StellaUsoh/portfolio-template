@@ -2,6 +2,7 @@ import { Layout } from "../components/Layout";
 import { Providers } from "./providers";
 import '../../styles/tailwind.css'
 import { Analytics } from "@vercel/analytics/next"
+import { EmailToast } from "../components/EmailToast";
 
 export const metadata = {
   title: {
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
           </div>
         </Providers>
         <Analytics/>
+        <EmailToast/>
       </body>
     </html>
   )
