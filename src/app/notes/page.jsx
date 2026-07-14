@@ -100,7 +100,7 @@ export default function Notes() {
             <p>Someday, I would like to own a skincare clinic. Outside of tech, I am quite interested in beauty and wellness, and would love to use my knowledge to educate and help people with various skin concerns.</p>
             <p>Someday, I would like to travel across Nigeria, Africa, and other parts of the world.</p>
             <p>Someday, I would like to host book reading events.</p>
-            <p>Someday, I will like to own a coffee shop that also doubles as a mini library and entry will be free for all members. We'll host occassional funraising events and all donations will go to charity</p>
+            <p>Someday, I will like to own a coffee shop that also doubles as a mini library and entry will be free for all members. We'll host occassional fun(d)raising events and all donations will go to charity</p>
           </div>
         </div>
         <div className="border-t border-zinc-100 dark:border-zinc-700/40 pt-8 pb-16">

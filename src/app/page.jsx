@@ -66,12 +66,12 @@ export default function Home() {
             Stella Usoh
           </h1>
           <p className="mt-2 text-xl font-semibold text-zinc-600 dark:text-zinc-400">
-            Product Manager.
+             <em>Product Tinkerer</em>
           </p>
           <div className="mt-4 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>Hi, I am Stella.</p>
             <p>
-              I help teams turn ideas into products people actually want to use.
+              I work with software teams to turn simple ideas into valuable products people actually want to use.
               I do this as a product manager.
             </p>
             <p>

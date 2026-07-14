@@ -105,7 +105,7 @@ export default function Projects() {
         className="max-w-5xl"
       >
         <Link href="/" className="text-sm text-zinc-500 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors mb-8 block">
-          ← Home
+          Home
         </Link>
 
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100 mb-2">
