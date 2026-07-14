@@ -77,7 +77,7 @@ export default function About() {
           <p>I consider myself a minimalist. If I was not doing product, I would be running a cafe and bookshop. I like to keep things simple, both in work and in life. I like peace and quiet. I like coffee. I consider my family and friends a safe space. I write a lot. I like reading too, I talked about most of this on my <a href="/notes" className="underline underline-offset-4 hover:decoration-[#88051E] dark:hover:decoration-[#FEF8C4] transition-all">notes page</a>. I am an introvert but I mostly never get bored because there is always so much to be done with so little time. I work better in environments that create room for creativity whether or not we are facing pressure.</p>
         </div>
 
-        <a href="https://mail.google.com/mail/?view=cm&to=stellausohh@gmail.com" target="_blank" rel="noopener noreferrer" className="inline-block text-zinc-900 dark:text-zinc-100 font-medium underline underline-offset-4 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none mb-16">
+        <a href="mailto:stellausohh@gmail.com" target="_blank" rel="noopener noreferrer" className="inline-block text-zinc-900 dark:text-zinc-100 font-medium underline underline-offset-4 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none mb-16">
           Let's work together
         </a>
 
@@ -132,7 +132,7 @@ export default function About() {
           <ul role="list" className="flex flex-wrap items-center gap-6">
             <li><a href="https://stellausoh.medium.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">Medium</a></li>
             <li><a href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">X (Twitter)</a></li>
-            <li><a href="https://mail.google.com/mail/?view=cm&to=stellausohh@gmail.com" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">Email</a></li>
+            <li><a href="mailto:stellausohh@gmail.com" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">Email</a></li>
             <li><a href="https://www.linkedin.com/in/stellausoh/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">LinkedIn</a></li>
             <li><a href="https://github.com/StellaUsoh" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">GitHub</a></li>
           </ul>
