@@ -24,5 +24,16 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     typography: typographyStyles,
+    extend: {
+      colors: {
+        buttercream: '#FEF8C4',
+        extend: {
+  colors: {
+    buttercream: '#FEF8C4',
+    cherry: '#88051E',
+  },
+},
+      },
+    },
   },
 }
