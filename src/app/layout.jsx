@@ -1,6 +1,7 @@
 import { Layout } from "../components/Layout";
 import { Providers } from "./providers";
 import '../../styles/tailwind.css'
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: {
@@ -49,11 +50,13 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="flex h-full bg-white dark:bg-black">
+        
         <Providers>
           <div className="flex w-full">
             <Layout>{children}</Layout>
           </div>
         </Providers>
+        <Analytics/>
       </body>
     </html>
   )
