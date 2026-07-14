@@ -104,7 +104,7 @@ export default function Projects() {
         variants={fadeUp}
         className="max-w-5xl"
       >
-        <Link href="/" className="text-sm text-zinc-500 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors mb-8 block">
+        <Link href="/" className="text-sm text-zinc-500 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none mb-8 block">
           Home
         </Link>
 
@@ -194,11 +194,11 @@ export default function Projects() {
 
         <div className="border-t border-zinc-100 dark:border-zinc-700/40 pt-8 pb-16">
           <ul role="list" className="flex flex-wrap items-center gap-6">
-            <li><a href="https://stellausoh.medium.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">Medium</a></li>
-            <li><a href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">X (Twitter)</a></li>
-            <li><a href="mailto:stellausohh@gmail.com" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/stellausoh/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">LinkedIn</a></li>
-            <li><a href="https://github.com/StellaUsoh" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">GitHub</a></li>
+            <li><a href="https://stellausoh.medium.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">Medium</a></li>
+            <li><a href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">X (Twitter)</a></li>
+            <li><a href="mailto:stellausohh@gmail.com" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/stellausoh/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">LinkedIn</a></li>
+            <li><a href="https://github.com/StellaUsoh" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">GitHub</a></li>
           </ul>
         </div>
 

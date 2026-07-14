@@ -87,7 +87,7 @@ export default function Home() {
               href="https://cal.com/stella-usoh/45-min-discovery-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-sm font-medium text-zinc-900 dark:text-zinc-100 border border-zinc-300 dark:border-zinc-700 px-5 py-2 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+              className="inline-block text-sm font-medium text-zinc-900 dark:text-zinc-100 border border-zinc-300 dark:border-zinc-700 px-5 py-2 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:underline underline-offset-4 transition-none"
             >
               Book a call
             </Link>
@@ -109,27 +109,27 @@ export default function Home() {
 
 <div className="mt-6 pt-6 pb-16">            <ul role="list" className="flex items-center gap-6">
               <li>
-                <Link href="https://stellausoh.medium.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">
+                <Link href="https://stellausoh.medium.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">
                   Medium
                 </Link>
               </li>
               <li>
-                <Link href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">
+                <Link href="https://x.com/ARealLifeStar" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">
                   X (Twitter)
                 </Link>
               </li>
               <li>
-                <Link href="mailto:stellausohh@gmail.com" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">
+                <Link href="mailto:stellausohh@gmail.com" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">
                   Email
                 </Link>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/in/stellausoh/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">
+                <Link href="https://www.linkedin.com/in/stellausoh/" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">
                   LinkedIn
                 </Link>
               </li>
               <li>
-                <Link href="https://github.com/StellaUsoh" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] transition-colors">
+                <Link href="https://github.com/StellaUsoh" target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-[#88051E] dark:hover:text-[#FEF8C4] hover:underline underline-offset-4 transition-none">
                   GitHub
                 </Link>
               </li>
